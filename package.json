@@ -1,7 +1,7 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "My first API",
+  "description": "My first API created in Explorer",
   "main": "index.js",
   "scripts": {
     "start": "node ./src/server.js"
