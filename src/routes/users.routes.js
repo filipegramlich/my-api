@@ -1,13 +1,11 @@
+
 const {Router} = require("express");
-
+const UsersController = require("../controllers/UsersController");
 const usersRoutes = Router();
+const userController = new UsersController();
 
-usersRoutes.post("/",(request, response)=>{
 
-    const {email, password,name} = request.body;
-    response.json({name, password, email});
-        
-    }
-);
+
+usersRoutes.post("/", userController.create  );
 
 module.exports = usersRoutes;
